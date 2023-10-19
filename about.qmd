@@ -1,5 +1,7 @@
 ---
-title: "About"
+title: "About Finn Heinemann"
 ---
 
-About this site
+## Basic Info 
+
+Finn Heinemann is a student-athlete at Georgetown College!
