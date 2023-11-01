@@ -1,7 +1,9 @@
 ---
-title: "warmup-finn-heinemann"
+title: "Hello there!"
 ---
 
-This is a Quarto website.
+This website is a project which is part of the class CSC324 at Georgetown College!
+This website is built with quarto framework and contains information about
+myself, as well as some other interesting stuff!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I hope you enjoy going through my website and maybe learn something new!

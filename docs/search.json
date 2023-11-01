@@ -1,16 +1,30 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "warmup-finn-heinemann",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "objectID": "about.html#basic-info",
+    "href": "about.html#basic-info",
+    "title": "About Me",
+    "section": "Basic Info",
+    "text": "Basic Info\nFinn Heinemann is a student-athlete at Georgetown College!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "about.html#life-and-education",
+    "href": "about.html#life-and-education",
+    "title": "About Me",
+    "section": "Life and Education",
+    "text": "Life and Education\nI am from Paderborn, Germany where I went to high school, called “Pelizaeus-Gymnasium Paderborn”. 2 months after I received my high school diploma I went to the United States to play Volleyball and further pursue my education.\nCurrently, I am a junior at Georgetown College, triple-majoring in Business Administration, Economics, and Finance, with a minor in Computer Science."
+  },
+  {
+    "objectID": "about.html#volleyball-career",
+    "href": "about.html#volleyball-career",
+    "title": "About Me",
+    "section": "Volleyball Career",
+    "text": "Volleyball Career\nI started playing Volleyball at the age of 11 at my hometown club called “Vo.R Paderborn”. During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men’s team in my hometown, where I played for 3 years, before transfering to a new club called “DJK Delbrück”, where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello there!",
     "section": "",
-    "text": "About this site"
+    "text": "This website is a project which is part of the class CSC324 at Georgetown College! This website is built with quarto framework and contains information about myself, as well as some other interesting stuff!\nI hope you enjoy going through my website and maybe learn something new!"
   }
 ]

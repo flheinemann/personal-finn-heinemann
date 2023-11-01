@@ -1,7 +1,33 @@
 ---
-title: "About Finn Heinemann"
+title: "About Me"
 ---
+
+<style>
+.center 
+{
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50% !important;
+}
+img
+{
+    border: 1px solid #000000 !important;
+}
+</style>
+
+<img src="/images/finn_volleyball.jpeg" class="center" style="border-radius: 50%;">
 
 ## Basic Info 
 
 Finn Heinemann is a student-athlete at Georgetown College!
+
+## Life and Education
+
+I am from Paderborn, Germany where I went to high school, called "Pelizaeus-Gymnasium Paderborn". 2 months after I received my high school diploma I went to the United States to play Volleyball and further pursue my education.
+
+Currently, I am a junior at Georgetown College, triple-majoring in Business Administration, Economics, and Finance, with a minor in Computer Science.
+
+## Volleyball Career
+
+I started playing Volleyball at the age of 11 at my hometown club called "Vo.R Paderborn". During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men's team in my hometown, where I played for 3 years, before transfering to a new club called "DJK Delbrück", where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time.
