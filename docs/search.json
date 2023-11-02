@@ -4,7 +4,7 @@
     "href": "about.html#basic-info",
     "title": "About Me",
     "section": "Basic Info",
-    "text": "Basic Info\nFinn Heinemann is a student-athlete at Georgetown College!"
+    "text": "Basic Info\nMy name is Finn Heinemann and I am a student-athlete at Georgetown College!"
   },
   {
     "objectID": "about.html#life-and-education",
@@ -18,7 +18,7 @@
     "href": "about.html#volleyball-career",
     "title": "About Me",
     "section": "Volleyball Career",
-    "text": "Volleyball Career\nI started playing Volleyball at the age of 11 at my hometown club called “Vo.R Paderborn”. During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men’s team in my hometown, where I played for 3 years, before transfering to a new club called “DJK Delbrück”, where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time."
+    "text": "Volleyball Career\nI started playing Volleyball at the age of 11 at my hometown club called “Vo.R Paderborn”. During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men’s team in my hometown, where I played for 3 years, before transfering to a new club called “DJK Delbrück”, where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time.\nYou can find our schedule for the upcoming season here!"
   },
   {
     "objectID": "index.html",
@@ -26,5 +26,19 @@
     "title": "Hello there!",
     "section": "",
     "text": "This website is a project which is part of the class CSC324 at Georgetown College! This website is built with quarto framework and contains information about myself, as well as some other interesting stuff!\nI hope you enjoy going through my website and maybe learn something new!"
+  },
+  {
+    "objectID": "articles/article_01.html",
+    "href": "articles/article_01.html",
+    "title": "warmup-finn-heinemann",
+    "section": "",
+    "text": "Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning.\nWhen defining the function, you can use a regular loop to do the actual looping."
+  },
+  {
+    "objectID": "articles/article_01.html#eloquent-javascript---chapter-5-problem-2-your-own-loop",
+    "href": "articles/article_01.html#eloquent-javascript---chapter-5-problem-2-your-own-loop",
+    "title": "warmup-finn-heinemann",
+    "section": "",
+    "text": "Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning.\nWhen defining the function, you can use a regular loop to do the actual looping."
   }
 ]

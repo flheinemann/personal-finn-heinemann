@@ -5,22 +5,22 @@ title: "About Me"
 <style>
 .center 
 {
-  display: block !important;
-  margin-left: auto !important;
+  display: block !important; 
+  margin-left: auto !important; 
   margin-right: auto !important;
-  width: 50% !important;
+  width: 80% !important;
 }
 img
 {
-    border: 1px solid #000000 !important;
+    border: 0.1px solid #000000 !important;
 }
 </style>
 
-<img src="/images/finn_volleyball.jpeg" class="center" style="border-radius: 50%;">
+<img src="/images/finn_volleyball.jpeg" class="center" style="border-radius: 0%;">
 
 ## Basic Info 
 
-Finn Heinemann is a student-athlete at Georgetown College!!
+My name is Finn Heinemann and I am a student-athlete at Georgetown College!
 
 ## Life and Education
 
