@@ -20,7 +20,7 @@ img
 
 ## Basic Info 
 
-Finn Heinemann is a student-athlete at Georgetown College!
+Finn Heinemann is a student-athlete at Georgetown College!!
 
 ## Life and Education
 

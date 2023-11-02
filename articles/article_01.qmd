@@ -1,0 +1,25 @@
+## Eloquent Javascript - Chapter 5, Problem 2: Your own Loop
+
+### Instructions:
+
+Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning.
+
+When defining the function, you can use a regular loop to do the actual looping.
+
+### My Code
+
+<style>
+.center 
+{
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50% !important;
+}
+img
+{
+    border: 1px solid #000000 !important;
+}
+</style>
+
+<img src="/images/article_1_code" class="center" style="border-radius: 50%;">
