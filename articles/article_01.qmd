@@ -22,4 +22,4 @@ img
 }
 </style>
 
-<img src="/images/article_1_code" class="center" style="border-radius: 50%;">
+<img src="/images/article_1_code.png" class="center" style="border-radius: 50%;">
