@@ -1,24 +1,31 @@
 [
   {
-    "objectID": "allArticles.html",
-    "href": "allArticles.html",
-    "title": "warmup-finn-heinemann",
-    "section": "",
-    "text": "To get to my first article, click here!\n\n\n\nTo get to my second article, click here!"
+    "objectID": "about.html#basic-info",
+    "href": "about.html#basic-info",
+    "title": "About Me",
+    "section": "Basic Info",
+    "text": "Basic Info\nMy name is Finn Heinemann and I am a student-athlete at Georgetown College!"
   },
   {
-    "objectID": "allArticles.html#my-articles",
-    "href": "allArticles.html#my-articles",
-    "title": "warmup-finn-heinemann",
-    "section": "",
-    "text": "To get to my first article, click here!\n\n\n\nTo get to my second article, click here!"
+    "objectID": "about.html#life-and-education",
+    "href": "about.html#life-and-education",
+    "title": "About Me",
+    "section": "Life and Education",
+    "text": "Life and Education\nI am from Paderborn, Germany where I went to high school, called “Pelizaeus-Gymnasium Paderborn”. 2 months after I received my high school diploma I went to the United States to play Volleyball and further pursue my education.\nCurrently, I am a junior at Georgetown College, triple-majoring in Business Administration, Economics, and Finance, with a minor in Computer Science."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello there!",
+    "objectID": "about.html#volleyball-career",
+    "href": "about.html#volleyball-career",
+    "title": "About Me",
+    "section": "Volleyball Career",
+    "text": "Volleyball Career\nI started playing Volleyball at the age of 11 at my hometown club called “Vo.R Paderborn”. During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men’s team in my hometown, where I played for 3 years, before transfering to a new club called “DJK Delbrück”, where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time.\nYou can find our schedule for the upcoming season here!"
+  },
+  {
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "My Articles",
     "section": "",
-    "text": "This website is a project which is part of the class CSC324 at Georgetown College! This website is built with quarto framework and contains information about myself, as well as some other interesting stuff!\nI hope you enjoy going through my website and maybe learn something new!"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nEloquent Javascript - Chapter 5, Problem 2: Your own Loop\n\n\n\n\n\n\n\n\nTable-Sort Assignment\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "articles/article_01.html",
@@ -49,24 +56,10 @@
     "text": "Starting from the site that populates a table of Bhangra artists, add three buttons:\n-&gt; a button that when clicked will sort the artists by name;\n-&gt; a button that when clicked will sort the artists by year of birth;\n-&gt; a button that when clicked will randomly shuffle the rows of the original table.\n\n\n\n\nAt the beginning I declared the function “populateTable”, which has the parameter “arr”. Then the “querySelector”- function is used to find the bhangra table and the variable “cells” is created only with the opening body value to begin with, where the information for the individual cells shall be stored in. Then, a row is added to the cells varaibale, as well as each of the headers (Name, Year of Birth, and Link) as the row headers.\nNext, I use a for-loop to populate each row with the information for each artist. The starting valöue of the for-loop is 0, the test is if the current vlaue is smaller than the length of the artist array, and the current value shall increase by 1 every time going through the loop. Inside the array, we inserta new row with the name, birthyear and link for each artist, by pulling the attributes from the artist array at the “i”-th place. Consequently, the loop goes through the artist array and makes a new row for every artist, conraining each artists data.\nFinally, the tbody gets closed at the end which is added as a command to the cells variable, the table is filled with the content of cells with the comman “innerHTML”, and a table is created by calling the function with the artists array in the parameter.\n\n\n\n\nNext, I needed to find the buttons and make a reference to them, which I did with the help of the querySelector function again (lines 68-70). Then, I added the eventListeners, which basically had the purpose of running a function, when each button is clicked. Lastly, I had to declare the 3 listener functions which shall be ran whenever a button is clicked (lines 74-76).\nIf the nameButton was clicked, the “sortByName”- function shall be ran, which has a helper function called “byName”. The byName helper function takes the 2 name properties of each of the 2 inputs, and compares them, and then return 1 if the name of input “a” is bigger then the name of input “b” (in this case bigger means comes before in alphabetical order), meaning the name of “b” coming after the name of “a” in alphabetical order. The same way -1 gets returned if the name of input “b” is bigger than the name of input “a”, meaning the name of “b” coming first in alphabetical order. If they are equal 0 is returned as a result of both being the exact same names. The actual “sortByName”- function then produces a sorted array with the command in line 87 and then populates the table with the earlier declared populateTable function and the sortedArray as the input of the function.\nAfter that, I do the exact same thing again for the dateButton with a function called “sortByDate” (lines 97-100)and a helper function called “byDate” (lines 91-95). The only difference is that the helper function compares the “birthYear” attribute of each artist and sorts them, not the name attribute.\nFinally I declare a “sortByRandom”- function (lines 112-115) which is the eventListener function for the “randomButton” and uses a helper function called “Array.prototype.shuffle”, which shuffles the array randomly. The “sortByRandom” function then producesa shuffled array with the help of the helper function and populates the table with the newly shuffled, randomized new array.\nThe javascript file with the full code can be found here!"
   },
   {
-    "objectID": "about.html#basic-info",
-    "href": "about.html#basic-info",
-    "title": "About Me",
-    "section": "Basic Info",
-    "text": "Basic Info\nMy name is Finn Heinemann and I am a student-athlete at Georgetown College!"
-  },
-  {
-    "objectID": "about.html#life-and-education",
-    "href": "about.html#life-and-education",
-    "title": "About Me",
-    "section": "Life and Education",
-    "text": "Life and Education\nI am from Paderborn, Germany where I went to high school, called “Pelizaeus-Gymnasium Paderborn”. 2 months after I received my high school diploma I went to the United States to play Volleyball and further pursue my education.\nCurrently, I am a junior at Georgetown College, triple-majoring in Business Administration, Economics, and Finance, with a minor in Computer Science."
-  },
-  {
-    "objectID": "about.html#volleyball-career",
-    "href": "about.html#volleyball-career",
-    "title": "About Me",
-    "section": "Volleyball Career",
-    "text": "Volleyball Career\nI started playing Volleyball at the age of 11 at my hometown club called “Vo.R Paderborn”. During my years with the youth team, we won the west german championship four times in the u13, u14, u18, and u20. With the age of 14, I also joined a men’s team in my hometown, where I played for 3 years, before transfering to a new club called “DJK Delbrück”, where I played in the 3. Bundesliga with the age of 17. Unfortunately, my last season in Germany got cancelled half way through and I came to Georgetown in August 2021. I am looking forward to play my third season here and qualify for the national championship tournament for the third consecutive time.\nYou can find our schedule for the upcoming season here!"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello there!",
+    "section": "",
+    "text": "This website is a project which is part of the class CSC324 at Georgetown College! This website is built with quarto framework and contains information about myself, as well as some other interesting stuff!\nI hope you enjoy going through my website and maybe learn something new!"
   }
 ]

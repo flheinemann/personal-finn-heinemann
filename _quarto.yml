@@ -11,7 +11,7 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: allArticles.qmd
+      - href: articles/index.qmd
         text: My Articles
 
 
