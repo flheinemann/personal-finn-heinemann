@@ -1,0 +1,35 @@
+## Table-Sort Assignment
+
+### Instructions
+
+Starting from the site that populates a table of Bhangra artists, add three buttons:
+
+-> a button that when clicked will sort the artists by name;
+
+-> a button that when clicked will sort the artists by year of birth;
+
+-> a button that when clicked will randomly shuffle the rows of the original table.
+
+### Modification of Table Population
+
+<img src="/images/article_2_code1.png" class="center" style="border-radius: 0%;">
+
+At the beginning I declared the function "populateTable", which has the parameter "arr". Then the "querySelector"- function is used to find the bhangra table and the variable "cells" is created only with the opening body value to begin with, where the information for the individual cells shall be stored in. Then, a row is added to the cells varaibale, as well as each of the headers (Name, Year of Birth, and Link) as the row headers. 
+
+Next, I use a for-loop to populate each row with the information for each artist. The starting valöue of the for-loop is 0, the test is if the current vlaue is smaller than the length of the artist array, and the current value shall increase by 1 every time going through the loop. Inside the array, we inserta new row with the name, birthyear and link for each artist, by pulling the attributes from the artist array at the "i"-th place. Consequently, the loop goes through the artist array and makes a new row for every artist, conraining each artists data.
+
+Finally, the tbody gets closed at the end which is added as a command to the cells variable, the table is filled with the content of cells with the comman "innerHTML", and a table is created by calling the function with the artists array in the parameter.
+
+### Implemenatation of the Buttons
+
+<img src="/images/article_2_code2.png" class="center" style="border-radius: 0%;">
+
+Next, I needed to find the buttons and make a reference to them, which I did with the help of the querySelector function again (lines 68-70). Then, I added the eventListeners, which basically had the purpose of running a function, when each button is clicked. Lastly, I had to declare the 3 listener functions which shall be ran whenever a button is clicked (lines 74-76).
+
+If the nameButton was clicked, the "sortByName"- function shall be ran, which has a helper function called "byName". The byName helper function takes the 2 name properties of each of the 2 inputs, and compares them, and then return 1 if the name of input "a" is bigger then the name of input "b" (in this case bigger means comes before in alphabetical order), meaning the name of "b" coming after the name of "a" in alphabetical order. The same way -1 gets returned if the name of input "b" is bigger than the name of input "a", meaning the name of "b" coming first in alphabetical order. If they are equal 0 is returned as a result of both being the exact same names. The actual "sortByName"- function then produces a sorted array with the command in line 87 and then populates the table with the earlier declared populateTable function and the sortedArray as the input of the function.
+
+After that, I do the exact same thing again for the dateButton with a function called "sortByDate" (lines 97-100)and a helper function called "byDate" (lines 91-95). The only difference is that the helper function compares the "birthYear" attribute of each artist and sorts them, not the name attribute.
+
+Finally I declare a "sortByRandom"- function (lines 112-115) which is the eventListener function for the "randomButton" and uses a helper function called "Array.prototype.shuffle", which shuffles the array randomly. The "sortByRandom" function then producesa shuffled array with the help of the helper function and populates the table with the newly shuffled, randomized new array.
+
+The javascript file with the full code can be found [here](/code/article2_code.js)!

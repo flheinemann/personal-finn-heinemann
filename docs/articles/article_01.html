@@ -115,9 +115,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#eloquent-javascript---chapter-5-problem-2-your-own-loop" id="toc-eloquent-javascript---chapter-5-problem-2-your-own-loop" class="nav-link active" data-scroll-target="#eloquent-javascript---chapter-5-problem-2-your-own-loop">Eloquent Javascript - Chapter 5, Problem 2: Your own Loop</a>
   <ul class="collapse">
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions:</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
   <li><a href="#my-code" id="toc-my-code" class="nav-link" data-scroll-target="#my-code">My Code</a></li>
   <li><a href="#explanation-of-the-code" id="toc-explanation-of-the-code" class="nav-link" data-scroll-target="#explanation-of-the-code">Explanation of the Code</a></li>
+  <li><a href="#output-explanation-of-the-output" id="toc-output-explanation-of-the-output" class="nav-link" data-scroll-target="#output-explanation-of-the-output">Output &amp; Explanation of the output</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -130,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="eloquent-javascript---chapter-5-problem-2-your-own-loop" class="level2">
 <h2 class="anchored" data-anchor-id="eloquent-javascript---chapter-5-problem-2-your-own-loop">Eloquent Javascript - Chapter 5, Problem 2: Your own Loop</h2>
 <section id="instructions" class="level3">
-<h3 class="anchored" data-anchor-id="instructions">Instructions:</h3>
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
 <p>Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning.</p>
 <p>When defining the function, you can use a regular loop to do the actual looping.</p>
 </section>
@@ -160,6 +161,13 @@ img
 <p>Therefore in our for-loop i should be equal to value (i=value), i should be teasted with the for what is determined in the parameter of the function (test(i)), and i should be updated by what is set for update (i=update(i)). Then, inside the for-loop i should be modified based on what is given for the body-parameter from the function (body(i)).</p>
 <p>The code is very simple but at the same time very effective in creating a loop with the arguments given as parameters for the function.</p>
 <p>After that, I tried the function with a specific example to make sure it works properly, like the instructions from the book command.</p>
+</section>
+<section id="output-explanation-of-the-output" class="level3">
+<h3 class="anchored" data-anchor-id="output-explanation-of-the-output">Output &amp; Explanation of the output</h3>
+<p><img src="../images/article_1_output.png" class="center" style="border-radius: 0%;"></p>
+<p>Firstly, I test the myLoop function with a start value of 3, the test is if the value is still bigger than 0, and the update of the value should be that it decreases by one everytime it goes through the loop. The body of the function is the function colsole.log which just prints out the input value in the console. We cxan see that the function does exactly that - prints out 3, then 2, then 1.</p>
+<p>Secondly, I wanted to try the function eith my own example, where I firdt wrote a function called “timesTen”, which simply multiplies the input value by 10 and then prints out the result. Then I tested the myLoop function with the start value of 0, the test shall be if the value is smaller or equal to five, and the value should increase by 1 every time we go through the loop. The body of the function shall be the earlier declared timesTen function. Consequently, the output were 0, 10, 20, 30, 40, and 50. So what happened was that the function took every number from 0 to 5, multiplied every by 10, and then printed out each result in the console.</p>
+<p>The javascript file with the full code can be found <a href="../code/article1_code.js">here</a>!</p>
 
 
 </section>

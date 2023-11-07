@@ -13,7 +13,7 @@ website:
       - href: article_01.qmd
         text: My own Loop
       - href: article_02.qmd
-        text: Article 2
+        text: Table with Sort-Buttons
 
 
 format:

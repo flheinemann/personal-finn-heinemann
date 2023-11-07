@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
 
 <body class="nav-fixed">
 
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -95,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../article_02.qmd" rel="" target="">
- <span class="menu-text">Article 2</span></a>
+ <span class="menu-text">Table with Sort-Buttons</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -109,15 +110,52 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#table-sort-assignment" id="toc-table-sort-assignment" class="nav-link active" data-scroll-target="#table-sort-assignment">Table-Sort Assignment</a>
+  <ul class="collapse">
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#modification-of-table-population" id="toc-modification-of-table-population" class="nav-link" data-scroll-target="#modification-of-table-population">Modification of Table Population</a></li>
+  <li><a href="#implemenatation-of-the-buttons" id="toc-implemenatation-of-the-buttons" class="nav-link" data-scroll-target="#implemenatation-of-the-buttons">Implemenatation of the Buttons</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
+<section id="table-sort-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="table-sort-assignment">Table-Sort Assignment</h2>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
+<p>Starting from the site that populates a table of Bhangra artists, add three buttons:</p>
+<p>-&gt; a button that when clicked will sort the artists by name;</p>
+<p>-&gt; a button that when clicked will sort the artists by year of birth;</p>
+<p>-&gt; a button that when clicked will randomly shuffle the rows of the original table.</p>
+</section>
+<section id="modification-of-table-population" class="level3">
+<h3 class="anchored" data-anchor-id="modification-of-table-population">Modification of Table Population</h3>
+<p><img src="../images/article_2_code1.png" class="center" style="border-radius: 0%;"></p>
+<p>At the beginning I declared the function “populateTable”, which has the parameter “arr”. Then the “querySelector”- function is used to find the bhangra table and the variable “cells” is created only with the opening body value to begin with, where the information for the individual cells shall be stored in. Then, a row is added to the cells varaibale, as well as each of the headers (Name, Year of Birth, and Link) as the row headers.</p>
+<p>Next, I use a for-loop to populate each row with the information for each artist. The starting valöue of the for-loop is 0, the test is if the current vlaue is smaller than the length of the artist array, and the current value shall increase by 1 every time going through the loop. Inside the array, we inserta new row with the name, birthyear and link for each artist, by pulling the attributes from the artist array at the “i”-th place. Consequently, the loop goes through the artist array and makes a new row for every artist, conraining each artists data.</p>
+<p>Finally, the tbody gets closed at the end which is added as a command to the cells variable, the table is filled with the content of cells with the comman “innerHTML”, and a table is created by calling the function with the artists array in the parameter.</p>
+</section>
+<section id="implemenatation-of-the-buttons" class="level3">
+<h3 class="anchored" data-anchor-id="implemenatation-of-the-buttons">Implemenatation of the Buttons</h3>
+<p><img src="../images/article_2_code2.png" class="center" style="border-radius: 0%;"></p>
+<p>Next, I needed to find the buttons and make a reference to them, which I did with the help of the querySelector function again (lines 68-70). Then, I added the eventListeners, which basically had the purpose of running a function, when each button is clicked. Lastly, I had to declare the 3 listener functions which shall be ran whenever a button is clicked (lines 74-76).</p>
+<p>If the nameButton was clicked, the “sortByName”- function shall be ran, which has a helper function called “byName”. The byName helper function takes the 2 name properties of each of the 2 inputs, and compares them, and then return 1 if the name of input “a” is bigger then the name of input “b” (in this case bigger means comes before in alphabetical order), meaning the name of “b” coming after the name of “a” in alphabetical order. The same way -1 gets returned if the name of input “b” is bigger than the name of input “a”, meaning the name of “b” coming first in alphabetical order. If they are equal 0 is returned as a result of both being the exact same names. The actual “sortByName”- function then produces a sorted array with the command in line 87 and then populates the table with the earlier declared populateTable function and the sortedArray as the input of the function.</p>
+<p>After that, I do the exact same thing again for the dateButton with a function called “sortByDate” (lines 97-100)and a helper function called “byDate” (lines 91-95). The only difference is that the helper function compares the “birthYear” attribute of each artist and sorts them, not the name attribute.</p>
+<p>Finally I declare a “sortByRandom”- function (lines 112-115) which is the eventListener function for the “randomButton” and uses a helper function called “Array.prototype.shuffle”, which shuffles the array randomly. The “sortByRandom” function then producesa shuffled array with the help of the helper function and populates the table with the newly shuffled, randomized new array.</p>
+<p>The javascript file with the full code can be found <a href="../code/article2_code.js">here</a>!</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
