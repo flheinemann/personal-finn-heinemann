@@ -4,6 +4,7 @@ project:
 
 website:
   title: "warmup-finn-heinemann"
+  site-path: "/warmup-finn-heinemann/"
   navbar:
     left:
       - href: index.qmd
