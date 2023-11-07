@@ -61,5 +61,19 @@
     "title": "warmup-finn-heinemann",
     "section": "Modification of Table Population",
     "text": "Modification of Table Population\n\nAt the beginning I declared the function “populateTable”, which has the parameter “arr”. Then the “querySelector”- function is used to find the bhangra table and the variable “cells” is created only with the opening body value to begin with, where the information for the individual cells shall be stored in. Then, a row is added to the cells varaibale, as well as each of the headers (Name, Year of Birth, and Link) as the row headers.\nNext, I use a for-loop to populate each row with the information for each artist. The starting valöue of the for-loop is 0, the test is if the current vlaue is smaller than the length of the artist array, and the current value shall increase by 1 every time going through the loop. Inside the array, we inserta new row with the name, birthyear and link for each artist, by pulling the attributes from the artist array at the “i”-th place. Consequently, the loop goes through the artist array and makes a new row for every artist, conraining each artists data.\nFinally, the tbody gets closed at the end which is added as a command to the cells variable, the table is filled with the content of cells with the comman “innerHTML”, and a table is created by calling the function with the artists array in the parameter."
+  },
+  {
+    "objectID": "allArticles.html",
+    "href": "allArticles.html",
+    "title": "warmup-finn-heinemann",
+    "section": "",
+    "text": "To get to my first article, click here!\n\n\n\nTo get to my second article, click here!"
+  },
+  {
+    "objectID": "allArticles.html#my-articles",
+    "href": "allArticles.html#my-articles",
+    "title": "warmup-finn-heinemann",
+    "section": "",
+    "text": "To get to my first article, click here!\n\n\n\nTo get to my second article, click here!"
   }
 ]

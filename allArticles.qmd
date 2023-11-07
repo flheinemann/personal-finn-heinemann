@@ -1,0 +1,9 @@
+## My Articles
+
+### Article 1 - My own Loop
+
+To get to my first article, click [here](/articles/article_01.qmd)!
+
+### Article 2 - Table-Sort Assignment
+
+To get to my second article, click [here](/articles/article_02.qmd)!
