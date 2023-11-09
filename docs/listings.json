@@ -5,5 +5,11 @@
       "/articles/article_01.html",
       "/articles/article_02.html"
     ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/blogpost_1.html"
+    ]
   }
 ]

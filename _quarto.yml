@@ -13,6 +13,8 @@ website:
         text: About
       - href: articles/index.qmd
         text: My Articles
+      - href: posts/index.qmd
+        text: Blog
 
 
 format:
