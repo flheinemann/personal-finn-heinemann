@@ -11,7 +11,7 @@ categories: [Computer Science, substantive]
 
 <img src="/images/SidebarCode.png" class="center" style="border-radius: 0%;">
 
-## Explanations of the Code
+## Explanation of the Code
 
 In order to create a sidebar for our website, we need to add it to the "_quarto.yml" document of our project.
 
