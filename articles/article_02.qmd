@@ -32,6 +32,20 @@ After that, I do the exact same thing again for the dateButton with a function c
 
 Finally I declare a "sortByRandom"- function (lines 112-115) which is the eventListener function for the "randomButton" and uses a helper function called "Array.prototype.shuffle", which shuffles the array randomly. The "sortByRandom" function then producesa shuffled array with the help of the helper function and populates the table with the newly shuffled, randomized new array.
 
+### Output
+
+Table after pressing the "Sort by Name" button:
+
+<img src="/images/article_2_output_name.png" class="center" style="border-radius: 0%;" width="600">
+
+Table after pressing the "Sort by Birth Year" button:
+
+<img src="/images/article_2_output_year.png" class="center" style="border-radius: 0%;" width="600">
+
+Table after pressing the "Randomize" button:
+
+<img src="/images/article_2_output_random.png" class="center" style="border-radius: 0%;" width="600">
+
 ### Javascript file
 
 The javascript file with the full code can be found [here](/code/article2_code.js)!

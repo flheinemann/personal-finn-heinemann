@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>warmup-finn-heinemann – article_02</title>
+<title>personal-finn-heinemann – article_02</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">warmup-finn-heinemann</span>
+    <span class="navbar-title">personal-finn-heinemann</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link active" href="../index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -103,10 +104,68 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../articles/article_02.html">Table-Sort Assignment</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/PaderbornImage.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../articles/article_01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">My Own Loop</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../articles/article_02.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Table-Sort Assignment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../articles/article_03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Volleyball Visualizations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../posts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -118,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
   <li><a href="#modification-of-table-population" id="toc-modification-of-table-population" class="nav-link" data-scroll-target="#modification-of-table-population">Modification of Table Population</a></li>
   <li><a href="#implemenatation-of-the-buttons" id="toc-implemenatation-of-the-buttons" class="nav-link" data-scroll-target="#implemenatation-of-the-buttons">Implemenatation of the Buttons</a></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a></li>
   <li><a href="#javascript-file" id="toc-javascript-file" class="nav-link" data-scroll-target="#javascript-file">Javascript file</a></li>
   </ul></li>
   </ul>
@@ -151,6 +211,15 @@ ul.task-list li input[type="checkbox"] {
 <p>If the nameButton was clicked, the “sortByName”- function shall be ran, which has a helper function called “byName”. The byName helper function takes the 2 name properties of each of the 2 inputs, and compares them, and then return 1 if the name of input “a” is bigger then the name of input “b” (in this case bigger means comes before in alphabetical order), meaning the name of “b” coming after the name of “a” in alphabetical order. The same way -1 gets returned if the name of input “b” is bigger than the name of input “a”, meaning the name of “b” coming first in alphabetical order. If they are equal 0 is returned as a result of both being the exact same names. The actual “sortByName”- function then produces a sorted array with the command in line 87 and then populates the table with the earlier declared populateTable function and the sortedArray as the input of the function.</p>
 <p>After that, I do the exact same thing again for the dateButton with a function called “sortByDate” (lines 97-100)and a helper function called “byDate” (lines 91-95). The only difference is that the helper function compares the “birthYear” attribute of each artist and sorts them, not the name attribute.</p>
 <p>Finally I declare a “sortByRandom”- function (lines 112-115) which is the eventListener function for the “randomButton” and uses a helper function called “Array.prototype.shuffle”, which shuffles the array randomly. The “sortByRandom” function then producesa shuffled array with the help of the helper function and populates the table with the newly shuffled, randomized new array.</p>
+</section>
+<section id="output" class="level3">
+<h3 class="anchored" data-anchor-id="output">Output</h3>
+<p>Table after pressing the “Sort by Name” button:</p>
+<p><img src="../images/article_2_output_name.png" class="center" style="border-radius: 0%;" width="600"></p>
+<p>Table after pressing the “Sort by Birth Year” button:</p>
+<p><img src="../images/article_2_output_year.png" class="center" style="border-radius: 0%;" width="600"></p>
+<p>Table after pressing the “Randomize” button:</p>
+<p><img src="../images/article_2_output_random.png" class="center" style="border-radius: 0%;" width="600"></p>
 </section>
 <section id="javascript-file" class="level3">
 <h3 class="anchored" data-anchor-id="javascript-file">Javascript file</h3>

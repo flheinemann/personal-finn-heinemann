@@ -51,17 +51,6 @@ Firstly, I test the myLoop function with a start value of 3, the test is if the 
 
 Secondly, I wanted to try the function eith my own example, where I firdt wrote a function called "timesTen", which simply multiplies the input value by 10 and then prints out the result. Then I tested the myLoop function with the start value of 0, the test shall be if the value is smaller or equal to five, and the value should increase by 1 every time we go through the loop. The body of the function shall be the earlier declared timesTen function. Consequently, the output were 0, 10, 20, 30, 40, and 50. So what happened was that the function took every number from 0 to 5, multiplied every by 10, and then printed out each result in the console.
 
-### Output
-
-Table after pressing the "Sort by Name" button:
-<img src="/images/article_2_output_name.png" class="center" style="border-radius: 0%;">
-
-Table after pressing the "Sort by Birth Year" button:
-<img src="/images/article_2_output_year.png" class="center" style="border-radius: 0%;">
-
-Table after pressing the "Randomize" button:
-<img src="/images/article_2_output_random.png" class="center" style="border-radius: 0%;">
-
 ### Javascript file
 
 The javascript file with the full code can be found [here](/code/article1_code.js)!

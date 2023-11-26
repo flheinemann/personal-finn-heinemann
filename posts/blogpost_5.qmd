@@ -1,0 +1,22 @@
+---
+title: "Character-Counting function"
+description: "Blog Post 5"
+author:
+    - name: Finn Heinemann
+date: "2023-11-24"
+categories: [Computer Science, substantive, function]
+---
+
+### Code
+
+<img src="/images/blog_2_code.png" class="center" style="border-radius: 0%;">
+
+### Explanation of the Code
+
+With the help of this function, we can determine how many times a certain character is oncluded in a string. The two parameters of the function are the string, and char, which is the character we want to look for in the given string.
+
+At the beginning of the function we establish a variable called "Chars" which helps to store how many of the character we are looking for are included in the string, as we go through the string one by one.
+
+The main part of the funciton is a for-loop hwich has the argument "position" (indicating at which position of the string we currently are), and the initial value of position is 0, we want to go through the loop as long as position is smaller or equal to the length of the input string-1 (because the first character of the string is at position 0), and possition increases by 1 every time we go through the loop.
+
+inside the loop, we compare if the the string at current position equals the char-input we are looking for. If yes, our Chars-varaibale increases by one. After we get out of the for-loop at the end of the "countChar"-function, the "CHars"-variable gets loged out in the console, which shows us how many of the characters we are looking for are actually in the input string.

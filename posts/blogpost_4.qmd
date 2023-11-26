@@ -1,0 +1,22 @@
+---
+title: "How to add a side-bar in your Quarto-Website"
+description: "Blog Post 4"
+author:
+    - name: Finn Heinemann
+date: "2023-11-24"
+categories: [Computer Science, substantive]
+---
+
+### Code
+
+<img src="/images/SidebarCode.png" class="center" style="border-radius: 0%;">
+
+## Explanations of the Code
+
+In order to create a sidebar for our website, we need to add it to the "_quarto.yml" document of our project.
+
+It needs to go under website, indeted just as much as "title", "side-path", and "navbar". Firstly, we need to define the different properties for the sidebar. For "id" I chose articles since I wanted to include the main sides of my website and every article by themselves. For the "style", I chose docked, for the "background" light and "collapse-level" 2. 
+
+I added a logo to the side-bar of my website which I saved as an image in the image-folder of my project. The logo I chose for my website is my hometowns' logo (Paderborn).
+
+Finally, I added all the documents which I wanted to include in the side-bar. For each document, we need to include the href, which is the refernce where the document is located, and text which is the name of the document shown in the side-bar.

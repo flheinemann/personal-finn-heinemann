@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "warmup-finn-heinemann"
-  site-path: "/warmup-finn-heinemann/"
+  title: "personal-finn-heinemann"
+  site-path: "/personal-finn-heinemann/"
   navbar:
     left:
       - href: index.qmd
@@ -15,6 +15,25 @@ website:
         text: My Articles
       - href: posts/index.qmd
         text: Blog
+  sidebar:
+  - id: articles
+    logo: images/PaderbornImage.webp
+    style: "docked"
+    background: light
+    collapse-level: 2
+    contents:
+    - href: index.qmd
+      text: Home
+    - href: about.qmd
+      text: About
+    - href: articles/article_01.qmd
+      text: My Own Loop
+    - href: articles/article_02.qmd
+      text: Table-Sort Assignment
+    - href: articles/article_03.rmd
+      text: Volleyball Visualizations
+    - href: posts/index.qmd
+      text: Blog
 
 
 format:
@@ -22,6 +41,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+
 
 
 

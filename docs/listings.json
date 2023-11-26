@@ -2,6 +2,7 @@
   {
     "listing": "/articles/index.html",
     "items": [
+      "/articles/article_03.html",
       "/articles/article_01.html",
       "/articles/article_02.html"
     ]
@@ -9,6 +10,10 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/blogpost_5.html",
+      "/posts/blogpost_4.html",
+      "/posts/blogpost_3.html",
+      "/posts/blogpost_2.html",
       "/posts/blogpost_1.html"
     ]
   }

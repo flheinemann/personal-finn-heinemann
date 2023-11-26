@@ -1,0 +1,57 @@
+## Making Graphics with Data from the Web
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Get the different tables needed for the visualizations from the NAIA stats website:
+```{r}
+library(rvest)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+url <- "https://naiastats.prestosports.com/sports/mvball/2021-22/teams/georgetown"
+tables <- url %>% 
+  read_html() %>% 
+  html_nodes("table")
+
+seasonStats <- tables %>%
+  purrr::pluck(4) %>%
+  html_table() 
+
+gameLog <- tables %>%
+  purrr::pluck(12) %>%
+  html_table() 
+```
+Make visualization of who had the most kills in the season:
+
+```{r}
+topKillers <- seasonStats %>% 
+  mutate(name= gsub("\\s+", " ", str_trim(Name))) %>% 
+  arrange(desc(k)) %>% 
+  select("name", "k") %>% 
+  head(5) 
+
+killersGraphic <- topKillers %>% 
+  ggplot(aes(x=reorder(name,k), y=k)) +
+  geom_col()+
+  labs(x="Player", y="Kills")
+killersGraphic
+  
+```
+
+Make a Visualization of the Service Aces to Service Errors:
+
+```{r}
+acesErrors <- gameLog %>% 
+  mutate(opponent= gsub("\\s+", " ", str_trim(Opponent))) %>% 
+  ggplot(aes(x=sa,y=se))+
+  geom_point()+
+  geom_text(aes(label=opponent),hjust=1, vjust=0)+
+  labs(x="Service Aces",y="Service Errors")
+acesErrors
+```
+
+Sources:
+
+https://stackoverflow.com/questions/25707647/merge-multiple-spaces-to-single-space-remove-trailing-leading-spaces (get rid of extra spaces in the names)
