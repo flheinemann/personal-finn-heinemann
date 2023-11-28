@@ -7,10 +7,11 @@ knitr::opts_chunk$set(echo = TRUE)
 First, we need to get all the needed packages needed, by using the library()-command. Then, we need to get
 the url for the NAIA stats website, in order to get all the tables from there with the data. The table with the season stats
 is the 4th one on the site and the game logs is the 12th one on there, this is how we know which ones to import in our r document.
-```{r}
+```{r warning=FALSE, message=FALSE}
 library(rvest)
 library(ggplot2)
 library(dplyr)
+library(ggrepel)
 library(stringr) 
 url <- "https://naiastats.prestosports.com/sports/mvball/2021-22/teams/georgetown"
 tables <- url %>% 
@@ -58,7 +59,7 @@ acesErrors <- gameLog %>%
   mutate(opponent= gsub("\\s+", " ", str_trim(Opponent))) %>% 
   ggplot(aes(x=sa,y=se))+
   geom_point()+
-  geom_text(aes(label=opponent),hjust=1, vjust=0)+
+  geom_text_repel(aes(label=opponent),hjust=1, vjust=0)+
   labs(x="Service Aces",y="Service Errors")
 acesErrors
 ```
